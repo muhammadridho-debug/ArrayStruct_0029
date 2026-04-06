@@ -18,5 +18,14 @@ int main()
 {
     // deklarasi variable struct
     mahasiswa mhs;
-    
+
+    // mengisi data
+    cout << "Isikan data nama : ";
+    getline(cin,mhs.nama);
+    cout << "Isikan data kota : ";
+    getline(cin, mhs.alamat.kota);
+    cout << "Isikan data desa : ";
+    getline(cin, mhs.alamat.desa);
+    cout << "Isikan data usia : ";
+    cin >> mhs.umur;
 }
