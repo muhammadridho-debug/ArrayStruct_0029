@@ -11,7 +11,7 @@ struct alamatDetail
 struct mahasiswa
 {
     string nama;
-    alamatDetail alamat; // Diperbaiki: menggunakan struct alamatDetail, bukan string
+    alamatDetail alamat;
     int umur;
 };
 
@@ -29,4 +29,11 @@ int main()
     cin >> mhs.alamat.desa;
     cout << "Isikan data usia : ";
     cin >> mhs.umur;
+    
+    // menampilkan data
+    cout << "Data Mahasiswa" << endl;
+    cout << "Nama : " << mhs.nama << endl;
+    cout << "Kota : " << mhs.alamat.kota << endl;
+    cout << "Desa : " << mhs.alamat.desa << endl;
+    cout << "Umur : " << mhs.umur << endl;
 }
